@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import Navbar from './Components/Navbar';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import logo from './logo.svg';
+import logo from './logo.svg'
 import './App.css';
 
 function InteractiveBox({ title, content }) {
@@ -44,18 +46,13 @@ function App() {
 
       <ParallaxLayer offset={0} speed={0.2}>
         <div className="App">
+        
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1>Welcome to My Interactive Website</h1>
-            <p>Edit <code>src/App.js</code> and save to reload.</p>
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-            </a>
+            <h1>Cizenship for Dummies</h1>
+            <h2>Attention:</h2>
+            <p>if you need help go-to source for legal guidance and student life assistance for international students</p>
+            
           </header>
         </div>
       </ParallaxLayer>
@@ -67,6 +64,7 @@ function App() {
       <ParallaxLayer offset={2} speed={0.2}>
         <InteractiveBox title="Box 2" content="Click me for more information about Box 2" />
       </ParallaxLayer>
+
     </Parallax>
   );
 }
