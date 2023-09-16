@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import Navbar from './Components/Navbar';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import logo from './logo.svg'
+import logo from './logo.svg';
 import './App.css';
 
 function InteractiveBox({ title, content }) {
@@ -39,31 +37,103 @@ function InteractiveBox({ title, content }) {
 
 function App() {
   return (
-    <Parallax pages={3}>
+    <Parallax pages={15}>
       <ParallaxLayer offset={0} speed={0.5} style={{ backgroundColor: 'lightblue' }} />
       <ParallaxLayer offset={1} speed={0.5} style={{ backgroundColor: 'lightcoral' }} />
       <ParallaxLayer offset={2} speed={0.5} style={{ backgroundColor: 'lightgreen' }} />
+      <ParallaxLayer offset={3} speed={0.5} style={{ backgroundColor: 'lightblue' }} />
+      <ParallaxLayer offset={4} speed={0.5} style={{ backgroundColor: 'lightcoral' }} />
+      <ParallaxLayer offset={5} speed={0.5} style={{ backgroundColor: 'lightgreen' }} />
+      <ParallaxLayer offset={6} speed={0.5} style={{ backgroundColor: 'lightblue' }} />
+      <ParallaxLayer offset={7} speed={0.5} style={{ backgroundColor: 'lightcoral' }} />
+      <ParallaxLayer offset={8} speed={0.5} style={{ backgroundColor: 'lightgreen' }} />
+      <ParallaxLayer offset={9} speed={0.5} style={{ backgroundColor: 'lightblue' }} />
+      <ParallaxLayer offset={10} speed={0.5} style={{ backgroundColor: 'lightcoral' }} />
+      <ParallaxLayer offset={11} speed={0.5} style={{ backgroundColor: 'lightgreen' }} />
+      <ParallaxLayer offset={12} speed={0.5} style={{ backgroundColor: 'lightblue' }} />
+      <ParallaxLayer offset={13} speed={0.5} style={{ backgroundColor: 'lightcoral' }} />
+      <ParallaxLayer offset={14} speed={0.5} style={{ backgroundColor: 'lightgreen' }} />
+
 
       <ParallaxLayer offset={0} speed={0.2}>
         <div className="App">
-        
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
-            <h1>Cizenship for Dummies</h1>
-            <h2>Attention:</h2>
-            <p>if you need help go-to source for legal guidance and student life assistance for international students</p>
-            
+            <h1>Welcome to My Interactive Website</h1>
+            <p>Edit <code>src/App.js</code> and save to reload.</p>
+            <a
+              className="App-link"
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn React
+            </a>
           </header>
         </div>
       </ParallaxLayer>
 
       <ParallaxLayer offset={1} speed={0.2}>
-        <InteractiveBox title="Box 1" content="Click me for more information about Box 1" />
+        <InteractiveBox 
+        title="How To Get A Visa" content="" />
       </ParallaxLayer>
 
       <ParallaxLayer offset={2} speed={0.2}>
-        <InteractiveBox title="Box 2" content="Click me for more information about Box 2" />
+        <InteractiveBox title="How To Deal With The Visa You Are Given" content="" />
       </ParallaxLayer>
+
+      <ParallaxLayer offset={3} speed={0.2}>
+        <InteractiveBox title="Important Alerts And Deadline" content="" />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={4} speed={0.2}>
+        <InteractiveBox title="How To Obtain Important Medical Records" content="" />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={5} speed={0.2}>
+        <InteractiveBox title="How To Obtain Important Financial Records" content="" />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={6} speed={0.2}>
+        <InteractiveBox title="Total Fees" content="" />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={7} speed={0.2}>
+        <InteractiveBox title="How To Obtain A Driver's Liscense" content="" />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={8} speed={0.2}>
+        <InteractiveBox title="How to Obtain A Bank Account" content="" />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={9} speed={0.2}>
+        <InteractiveBox title="How To Apply For Housing" content="" />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={10} speed={0.2}>
+        <InteractiveBox title="How To Work in America" content="" />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={11} speed={0.2}>
+        <InteractiveBox title="How To Get Sponsors" content="" />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={12} speed={0.2}>
+        <InteractiveBox title="Where to Apply" content="" />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={13} speed={0.2}>
+        <InteractiveBox title="Winning the Visa Lottery" content="" />
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={14} speed={0.2}>
+    <div className="App">
+      <InteractiveBox title="Winning the Visa Lottery" content="" />
+      
+      {/* Add your image here */}
+      <img src="your-image-path.jpg" alt="Your Image" />
+    </div>
+  </ParallaxLayer>
 
     </Parallax>
   );
